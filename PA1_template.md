@@ -5,6 +5,8 @@ output:
     keep_md: true
 ---
 
+# Reproducible Research: Peer Assessment 1
+
 
 ## Loading and preprocessing the data
 
@@ -60,7 +62,7 @@ mn <- mean(totals)
 md <- median(totals)
 ```
 
-The mean and median of total number of steps taken each day are
+* The **mean** and **median** for total number of steps taken each day are
  9354.2295082 and 10395 respectively.  
  
 
@@ -103,13 +105,15 @@ g
 
 ![plot of chunk medians2](figure/medians2-1.png) 
 
-* The five minute interval that, on average, contains the maximum number
-of steps is 835.
+* The five minute interval that, on average, contains the **maximum number
+of steps** is 835.
 
 ## Imputing missing values
 
-The following code calculates the number of missing values and fills them
-with the average for that 5-minute interval.
+The strategy used to impute the missing values is to use the average for
+each 5-minute interval over all the days. The following code calculates 
+the number of missing values and fills them with the average for that 
+5-minute interval.
 
 
 ```r
@@ -139,7 +143,7 @@ for (i in dfImp$interval) {
 	j <- j + 1
 }
 ```
-* The total number of missing values is 2304.  
+* The total **number of missing values** is 2304.  
 
 The following codes displays the histogram of the number of the number of steps taken each day
  with the corresponding imputed values.
@@ -164,7 +168,7 @@ mnImp <- mean(totalsImp)
 mdImp <- median(totalsImp)
 ```
 
-The mean and median of total number of steps taken each day are
+* The **mean** and **median** for the total number of steps taken each day are
  1.0766189 &times; 10<sup>4</sup> and 1.0766189 &times; 10<sup>4</sup> respectively.  
  
 The difference between the mean and mean of the two data sets are 

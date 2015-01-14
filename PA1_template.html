@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-<title>Loading and preprocessing the data</title>
+<title>Reproducible Research: Peer Assessment 1</title>
 
 <script type="text/javascript">
 window.onload = function() {
@@ -201,6 +201,8 @@ hr {
 </head>
 
 <body>
+<h1>Reproducible Research: Peer Assessment 1</h1>
+
 <h2>Loading and preprocessing the data</h2>
 
 <pre><code class="r">unzip(&quot;activity.zip&quot;)
@@ -248,8 +250,10 @@ mn &lt;- mean(totals)
 md &lt;- median(totals)
 </code></pre>
 
-<p>The mean and median of total number of steps taken each day are
- 9354.2295082 and 10395 respectively.  </p>
+<ul>
+<li>The <strong>mean</strong> and <strong>median</strong> for total number of steps taken each day are
+9354.2295082 and 10395 respectively.<br/></li>
+</ul>
 
 <h2>What is the average daily activity pattern?</h2>
 
@@ -288,14 +292,16 @@ g
 <p><img src="data:image/png;base64,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" alt="plot of chunk medians2"/> </p>
 
 <ul>
-<li>The five minute interval that, on average, contains the maximum number
-of steps is 835.</li>
+<li>The five minute interval that, on average, contains the <strong>maximum number
+of steps</strong> is 835.</li>
 </ul>
 
 <h2>Imputing missing values</h2>
 
-<p>The following code calculates the number of missing values and fills them
-with the average for that 5-minute interval.</p>
+<p>The strategy used to impute the missing values is to use the average for
+each 5-minute interval over all the days. The following code calculates 
+the number of missing values and fills them with the average for that 
+5-minute interval.</p>
 
 <pre><code class="r"># Generates Vector of NAs.
 nAs = is.na(df$steps)
@@ -325,7 +331,7 @@ for (i in dfImp$interval) {
 </code></pre>
 
 <ul>
-<li>The total number of missing values is 2304.<br/></li>
+<li>The total <strong>number of missing values</strong> is 2304.<br/></li>
 </ul>
 
 <p>The following codes displays the histogram of the number of the number of steps taken each day
@@ -347,8 +353,10 @@ mnImp &lt;- mean(totalsImp)
 mdImp &lt;- median(totalsImp)
 </code></pre>
 
-<p>The mean and median of total number of steps taken each day are
- 1.0766189 &times; 10<sup>4</sup> and 1.0766189 &times; 10<sup>4</sup> respectively.  </p>
+<ul>
+<li>The <strong>mean</strong> and <strong>median</strong> for the total number of steps taken each day are
+1.0766189 &times; 10<sup>4</sup> and 1.0766189 &times; 10<sup>4</sup> respectively.<br/></li>
+</ul>
 
 <p>The difference between the mean and mean of the two data sets are 
 1411.959171 and 371.1886792 respectively. As we can see, without surprise,
